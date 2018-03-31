@@ -5,7 +5,8 @@
 */
 
 var testScores = [90, 50, 100, 25, 81, 66, 80];
-var lowestPassScore = findLowestPassScore(haystack);
+return testScores < 60;
+var lowestPassScore = findLowestPassScore.find(testScores);
 
 console.log(lowestPassScore);
 

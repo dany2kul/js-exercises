@@ -1,7 +1,7 @@
-/*
+var laptop = {
+    brand: "sony vaio",
+    screenSize: 13,
+    isTouchscreen: false,
+    Webcam: true
 
-Describe your own laptop as a JavaScript object
-
-Try to think of as many properties as you can!
-
-*/
+}

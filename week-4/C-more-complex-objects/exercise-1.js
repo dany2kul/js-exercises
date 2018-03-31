@@ -5,12 +5,12 @@
 */
 
 var house = {
-    address: "1 Kinning Park",
-    previousOwners: ["Claire M.", "John A."],
-    currentOwner: {
-      firstName: "Margaret",
-      lastName: "Conway"
-    }
+  address: "1 Kinning Park",
+  previousOwners: ["Claire M.", "John A."],
+  currentOwner: {
+    firstName: "Margaret",
+    lastName: "Conway"
+  }
 };
 
 /*
@@ -18,6 +18,9 @@ var house = {
 
   WRITE YOUR CODE BELOW
 */
+house.address = "51 Berley Road";
+house.previousOwners = ["Brian M.", "Fiona S."];
+house.currentOwner.lastName = "Montgomery";
 
 // - change the address of "house" to '51 Berkley Road'
 // - change the previous owners of "house" to ["Brian M.", "Fiona S."]

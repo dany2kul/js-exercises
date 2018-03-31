@@ -3,7 +3,7 @@
 */
 
 // WRITE CODE BELOW THIS
-
+kitten.name
 // WRITE CODE ABOVE THIS
 
 console.log(kitten.name);

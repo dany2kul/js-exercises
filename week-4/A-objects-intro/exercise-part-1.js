@@ -7,3 +7,11 @@ Assign each of them to a separate variable
 
 */
 
+var fish = {
+    color: "gold",
+    age: 3,
+    origin: "america",
+    shortlifeSpan: true,
+    petType: "domestic"
+
+}
