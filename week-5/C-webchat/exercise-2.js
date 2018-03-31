@@ -24,25 +24,24 @@ on the submit button. Then check the following:
 1) The input field should be empty.
 2) When you refresh the page in your browser, you should be able to see your new message in the message list.
 */
-var classes = document.getElementById("message-list");
-fetch("https://codeyourfuture.herokuapp.com/api/messages").then(function (response) {
-    return response.text();
-}).then(function (Help) {
-    return classes.innerHTML = Help;
-});
 
-var clipboardTitle = "Javascript help";
-var clipboardText = "i really need help with javascript,send help";
-var requestBody = { title: clipboardTitle, text: clipboardText };
+var button = document.querySelector("#submit");
+var input = document.getElementById("message-input");
+button.addEventListener("click", submitValue);
 
-var postRequestParameters = {
-    body: JSON.stringify(requestBody),
-    method: 'POST',
-    headers: {
-        "content": "this is for daniella"
-    }
-};
+function submitValue() {
+    var text = input.value;
+    var requestBody = { content: text };
+    var postRequestParameters = {
+        body: JSON.stringify(requestBody),
+        method: 'POST',
+        headers: {
+            'content-type': 'application/json'
+        }
+    };
 
-fetch("https://codeyourfuture.herokuapp.com/api/clipboard", postRequestParameters);
+    fetch(" https://codeyourfuture.herokuapp.com/api/messages", postRequestParameters);
 
-// Write your code here
+}
+
+
