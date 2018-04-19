@@ -5,9 +5,11 @@
 // - remove the item at the specified index
 
 function remove(arr, index) {
-  return; // complete this statement
+  return (arr, index);
 }
-
+var array = ["Irina", "Ashleigh", "Mozafar"];
+var newArray = array.slice(0, array.length);
+console.log(newArray);
 /* 
   DO NOT EDIT BELOW THIS LINE
   --------------------------- */

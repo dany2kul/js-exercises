@@ -29,7 +29,7 @@ var parkAvenueHouse = {
 
   WRITE YOUR CODE BELOW
 */
-
+house.getOwnerFullName =
 // returns the full name (first name + last name) of the owner of the house
 function getOwnerFullName(house) {
 
